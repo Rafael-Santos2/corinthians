@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fav icon -->
+  <link rel="shortcut icon" href="img/corinthians.svg" type="image/x-icon">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap ícones -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Minha Paixão</title>
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <header id="header" class="row">
+      <div id="logo-container">
+        <img src="img/corinthians.svg" alt="Art" id="logo">
+        <h1 id="name">Minha Paixão</h1>
+      </div>
+      <p id="name">Para Sempre FIEL!!!</p>
+    </header>
+    <nav id="navbar" class="container">
+      <div class="row justify-content-center">
+        <a href="#">Home</a>
+        <a href="#">Projetos</a>
+        <a href="#">Artistas</a>
+        <a id="modal" data-bs-toggle="modal" data-bs-target="#contatoModal">Contate-nos</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="contatoModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Entre em Contato</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailContato" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="emailContato" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+    </div>
+ </div>
+  <!-- MAIN IMAGE -->
+  <div class="d-flex justify-content-center">
+    <div class="carousel slide" id="carouselExemplo" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <img src="img/6x1.jpg" alt="img 1" class="d-block mx-auto">
+        </div>
+        <div class="carousel-item">
+          <img src="img/mundial.jpg" alt="img 2" class="d-block mx-auto">
+        </div>
+        <div class="carousel-item">
+          <img src="img/paulistao.jpg" alt="img 3" class="d-block mx-auto">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExemplo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExemplo" data-bs-slide="next">
+        <span class="carousel-control-next-icon seta"></span>
+      </button>
+    </div>
+  </div>
+
+
+  <!-- GALLERY -->
+  <div class="container" id="gallery-container">
+    <div class="col-12">
+      <h1>Jogadores em destaque</h1>
+    </div>
+    <div class="row gx-md-5">
+      <div class="col-xs-12 col-md-6 sombra">
+        <div class="small-image-container center-image jogador" id="img-2"></div>
+        <h3>Yuri Alberto Monteiro da Silva</h3>
+        <p class="secondary-color textowhite">Nascido em: 18/03/2001</p>
+        <a href="https://pt.wikipedia.org/wiki/Yuri_Alberto" class="btn" target="_blank">Detalhes</a>
+      </div>
+
+      <div class="col-xs-12 col-md-6 sombra">
+        <div class="small-image-container center-image jogador" id="img-3"></div>
+        <h3>Rodrigo Garro</h3>
+        <p class="secondary-color textowhite">Nascido em: 04/01/1998</p>
+        <a href="https://pt.wikipedia.org/wiki/Rodrigo_Garro" class="btn" target="_blank">Detalhes</a>
+      </div>
+
+      <div class="col-xs-12 col-md-6 sombra">
+        <div class="small-image-container center-image jogador" id="img-4"></div>
+        <h3>Memphis Depay</h3>
+        <p class="secondary-color textowhite">Nascido em: 13/02/1994</p>
+        <a href="https://pt.wikipedia.org/wiki/Memphis_Depay" class="btn" target="_blank">Detalhes</a>
+      </div>
+
+      <div class="col-xs-12 col-md-6 sombra">
+        <div class="small-image-container center-image jogador" id="img-5"></div>
+        <h3>Hugo de Souza Nogueira</h3>
+        <p class="secondary-color textowhite">Nascido em: 31/01/1999</p>
+        <a href="https://pt.wikipedia.org/wiki/Neneca_(futebolista,_1999)" class="btn" target="_blank">Detalhes</a>
+      </div>
+
+      <div class="col-xs-12 col-md-6 sombra">
+        <div class="small-image-container center-image jogador" id="img-6"></div>
+        <h3>André Martín Carrillo Díaz </h3>
+        <p class="secondary-color textowhite">Nascido em: 14/06/1991</p>
+        <a href="https://pt.wikipedia.org/wiki/Andr%C3%A9_Carrillo" class="btn" target="_blank">Detalhes</a>
+      </div>
+
+      <div class="col-xs-12 col-md-6 sombra">
+        <div class="small-image-container center-image jogador" id="img-7"></div>
+        <h3>José Andrés Martínez Torres</h3>
+        <p class="secondary-color textowhite">Nascido em: 07/08/1994</p>
+        <a href="https://pt.wikipedia.org/wiki/Jos%C3%A9_Andr%C3%A9s_Mart%C3%ADnez" class="btn" target="_blank">Detalhes</a>
+      </div>
+
+    </div>
+    <footer class="container">
+      <p class="secundary-color" id="redes">Nos encontre nas redes sociais:</p>
+      <div class="row justify-content-center" id="social-icons-container">
+        <div class="col-1">
+          <a href="https://www.facebook.com/corinthians/?locale=pt_BR"><i class="bi bi-facebook secondary-color sociais"></i></a>
+        </div>
+        <div class="col-1">
+          <a href="https://www.instagram.com/corinthians/"><i class="bi bi-instagram secondary-color sociais"></i></a>
+        </div>
+        <div class="col-1">
+          <a href="https://twitter.com/Corinthians?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="bi bi-twitter secondary-color sociais"></i></a>
+        </div>
+      </div>
+      <p class="secondary-color">Corinthians &copy; 2025</p>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+  <script src="script.js"></script>
+</html>
