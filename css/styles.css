@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Patrick+Hand&display=swap');
+* {
+    color: #25282e;
+    font-family: "Oswald";
+}
+body{
+    background: linear-gradient(to right, #000000, #cbcbcb);
+}
+a, i {
+    transition: .5s;
+    text-decoration: none;
+}
+h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.553);
+}
+.sombra{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.553);
+}
+.secundary-color {
+    color: #555;
+}
+.center-image {
+    background-size: cover;
+    background-position: center;
+}
+.textowhite{
+    font-size: 1.5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.553);
+}
+.btn {
+    text-decoration: none;
+    background-color: #f3f3f3;
+    color: #000;
+    padding: 7px 18px;
+    border-radius: 7;
+}
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+#header h1{
+    color: #000000;
+    font-size: 3em;
+}
+#header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #40404042;
+}
+#header p {
+    margin-bottom: 0;
+    color: black;
+    font-size: 1.3em;
+}
+#logo-container {
+    display: flex;
+    justify-content: center;
+}
+#logo {
+    width: 40px;
+    margin-right: 15px;
+}
+#navbar {
+    padding: 10px;
+    margin: 10px auto;
+}
+#navbar a {
+    width: auto;
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+}
+#modal{
+    cursor: pointer;
+}
+#navbar a:hover {
+    color: #c1b696;
+}
+.main-image {
+    height: 400px;
+    background-image: url('../img/g_1.jpg');
+    margin-bottom: 30px;
+    position: relative;
+}
+.main-image-info {
+    background-color: #fff;
+    padding: 25px;
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+}
+#img-2 {
+    background-image: url('../img/yuri.jpg');
+    border-radius: 20px;
+}
+#img-3 {
+    background-image: url('../img/garro.jpg');
+    border-radius: 20px;
+}
+#img-4 {
+    background-image: url('../img/memphis.jpeg');
+    border-radius: 20px;
+}
+#img-5 {
+    background-image: url('../img/hugo.jpg');
+    border-radius: 20px;
+}
+#img-6 {
+    background-image: url('../img/carillo.jpg');
+    border-radius: 20px;
+}
+#img-7 {
+    background-image: url('../img/martinez.jpeg');
+    border-radius: 20px;
+}
+.jogador{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.jogador:hover{
+    transform: scale(1.1);
+}
+#gallery-container {
+    text-align: center;
+}
+#gallery-container h1,
+#gallery-container .col-md-6,
+#gallery-container .col-xs-12 {
+    margin-bottom: 50px;
+    color: #fff;
+}
+#gallery-container h1{
+    margin-top: 30px;
+}
+.small-image-container {
+    height: 250px;
+    margin-bottom: 20px;
+}
+footer {
+    border-top: 1px solid #ccc;
+    height: 250px;
+    padding: 30px;
+}
+footer i {
+    font-size: 20px;
+}
+#social-icons-container div {
+    text-align: center;
+}
+footer p {
+    text-align: center;
+    margin: 20px;
+}
+a:hover i {
+    color: #c1b696;
+}
+.carousel img {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(0%);
+}
+.carousel-control-prev-icon{
+    margin-left: -150px;
+}
+.carousel-control-next-icon{
+    margin-right: -150px;
+}
+#redes{
+    font-size: 2em;
+    color: #d5d4d4;
+}
+.sociais {  
+    font-size: 3rem; /* Aumenta o tamanho dos ícones */  
+    color: #fff;
+}  
+@media (max-width: 768px) {
+    .carousel img{
+        max-width: 50vh;
+        max-height: 40vh;
+    }
+    .carousel-control-prev-icon{
+        margin-left: -60px;
+    }
+    .carousel-control-next-icon{
+        margin-right: -60px;
+    }
+    #navbar{
+        display: flex;
+    }
+    #navbar a{
+        width: auto;
+        font-size: 1em;
+    }
+    #header h1{
+        font-size: 2em;
+    }
+    .sociais{  
+        font-size: 2rem; /* Aumenta o tamanho dos ícones */  
+        margin-left: -30px;
+        color: #fff;
+    }
+    .col-1{
+        margin-left: 30px;
+
+    }
+}
